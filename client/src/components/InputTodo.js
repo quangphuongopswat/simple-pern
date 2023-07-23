@@ -7,7 +7,7 @@ const InputTodo = () => {
         e.preventDefault(); //avoid refresh
         try {
             const body = { description };
-            const response = await fetch("http://localhost:5000/todos", {
+            const response = await fetch("http://52.34.199.107:5000/todos", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
